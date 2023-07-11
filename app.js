@@ -1,11 +1,11 @@
 console.log("hello World");
 const container = document.querySelector("#container");
 let grid;
-function createRow(){
+function createRow(num){
     const row = document.createElement("div");
     row.classList.add('row');
-    row.textContent = "0";
-    for(i = 0; i < 16;i++){
+    
+    for(let i = 0; i < num;i++){
         const column = document.createElement('div');
         column.classList.add('column');
         column.textContent = "1"; 
@@ -14,11 +14,14 @@ function createRow(){
     container.appendChild(row); 
 
 }
-createRow();
-
 function createGrid(num){
-    
+    for(let i = 0; i < num; i++){
+        createRow(num);
+    }
     
    
 }
+let num = 16;
+createGrid(num);
+
 
