@@ -1,11 +1,19 @@
+body{
+   display:flex;
+}
 #container{
    border:solid;
    display:flex;
    flex-direction: column;
+   flex:none;
 }
 
 .row {
    display:flex;
    
+
+}
+.column {
+   padding:10px;
 
 }

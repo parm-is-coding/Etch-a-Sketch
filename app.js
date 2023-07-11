@@ -7,8 +7,7 @@ function createRow(num){
     
     for(let i = 0; i < num;i++){
         const column = document.createElement('div');
-        column.classList.add('column');
-        column.textContent = "1"; 
+        column.classList.add('column'); 
         row.appendChild(column);
     }
     container.appendChild(row); 
