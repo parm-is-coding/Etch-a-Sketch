@@ -8,6 +8,10 @@ function createRow(num){
     for(let i = 0; i < num;i++){
         const column = document.createElement('div');
         column.classList.add('column'); 
+        column.addEventListener('mouseover',() =>{
+            column.style.background = "black";
+
+        })
         row.appendChild(column);
     }
     container.appendChild(row); 
