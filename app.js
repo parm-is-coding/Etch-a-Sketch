@@ -24,7 +24,18 @@ function createGrid(num){
     
    
 }
+
+function getInput(){
+    
+}
+const button = document.querySelector("#squares");
+button.addEventListener("click", () => {
+    prompt("Enter Canvas Size");
+
+
+} )
 let num = 16;
+
 createGrid(num);
 
 
