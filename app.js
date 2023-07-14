@@ -30,11 +30,13 @@ function getInput(){
 }
 const button = document.querySelector("#squares");
 button.addEventListener("click", () => {
-    prompt("Enter Canvas Size");
-
+   let input = 0;
+    while(input > 100 || input <= 0){
+         input = prompt("Enter num Square");
+    }
 
 } )
-let num = 16;
+let num = 32;
 
 createGrid(num);
 
