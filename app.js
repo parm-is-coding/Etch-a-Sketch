@@ -22,13 +22,16 @@ function createRow(num){
         })
         row.appendChild(column);
     }
-    container.appendChild(row); 
+    return row; 
 
 }
 function createGrid(num){
+    const grid = document.createElement("div");
+    grid.classList.add("grid");
     for(let i = 0; i < num; i++){
-        createRow(num);
+        grid.appendChild(createRow(num));
     }
+    container.appendChild(grid);
     
    
 }
@@ -47,9 +50,10 @@ button.addEventListener("click", () => {
 
     
 
-} )
-let num = 5;
+})
 
+//Default Grid
+let num = 16;
 createGrid(num);
 
 
