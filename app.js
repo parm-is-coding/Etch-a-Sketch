@@ -31,9 +31,7 @@ function createGrid(num){
     for(let i = 0; i < num; i++){
         grid.appendChild(createRow(num));
     }
-    container.appendChild(grid);
-    
-   
+    return grid;
 }
 
 function getInput(){
@@ -46,7 +44,7 @@ button.addEventListener("click", () => {
          input = prompt("Enter num Square");
     }
     num = input;
-    container.removeChild(row);
+    container.removeChild(grid);
 
     
 
@@ -54,6 +52,6 @@ button.addEventListener("click", () => {
 
 //Default Grid
 let num = 16;
-createGrid(num);
+container.appendChild(createGrid(num));
 
 
