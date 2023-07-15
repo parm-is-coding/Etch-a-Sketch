@@ -44,14 +44,16 @@ button.addEventListener("click", () => {
          input = prompt("Enter num Square");
     }
     num = input;
-    container.removeChild(grid);
-
+    container.removeChild(child);
+    child = createGrid(num);
+    container.append(child);
     
 
 })
 
 //Default Grid
 let num = 16;
-container.appendChild(createGrid(num));
+let child =createGrid(num);
+container.appendChild(child);
 
 
