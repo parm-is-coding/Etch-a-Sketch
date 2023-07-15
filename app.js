@@ -1,13 +1,21 @@
 console.log("hello World");
 const container = document.querySelector("#container");
 let grid;
+
+function getPadding(numSquares){
+    let padding = 400/numSquares;
+    
+    return `${padding}px`
+}
+
 function createRow(num){
     const row = document.createElement("div");
     row.classList.add('row');
     
     for(let i = 0; i < num;i++){
         const column = document.createElement('div');
-        column.classList.add('column'); 
+        column.classList.add('column');
+        column.style.padding = getPadding(num); 
         column.addEventListener('mouseover',() =>{
             column.style.background = "black";
 
@@ -34,9 +42,13 @@ button.addEventListener("click", () => {
     while(input > 100 || input <= 0){
          input = prompt("Enter num Square");
     }
+    num = input;
+    container.removeChild(row);
+
+    
 
 } )
-let num = 32;
+let num = 5;
 
 createGrid(num);
 
