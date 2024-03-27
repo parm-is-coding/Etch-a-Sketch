@@ -18,7 +18,6 @@ function createRow(num){
         column.style.padding = getPadding(num); 
         column.addEventListener('mouseover',() =>{
             column.style.background = "black";
-
         })
         row.appendChild(column);
     }
@@ -34,9 +33,7 @@ function createGrid(num){
     return grid;
 }
 
-function getInput(){
-    
-}
+
 const button = document.querySelector("#squares");
 button.addEventListener("click", () => {
    let input = 0;

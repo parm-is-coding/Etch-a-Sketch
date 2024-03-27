@@ -1,5 +1,5 @@
 # Etch-a-Sketch
-This project is a simple web application that creates a grid of squares on a webpage. The size of the grid is determined by user input.
+This project is a simple web application that creates a grid of squares on a webpage. The size of the grid is determined by user input. This was created without using the Canvas Api, and instead using Dom Manipulation so that i could get extra experience with the DOM.
 
 ![Gif Example](./OxDDrH1.gif)
 
